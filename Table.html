@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <h1 class="text-center text-primary mt-5 fw-bold">Data Siswa Kelas XI</h1>
+  <p class="text text-center">Contoh penggunaan Color, Table, Typography & Utilities Bootstrap 5</p>    
+  <div class="container mt-4 bg-info text-light rounded p-3">Tabel di bawah menampilkan daftar siswa beserta statusnya</div>
+  <div class="container mt-3 p-3">
+  <table class="table table-bordered">
+    <thead>
+      <tr class="table table-dark text-center">
+        <th>No</th>
+        <th>Nama</th>
+        <th>Kelas</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="text-center">1</td>
+        <td>Ani</td>
+        <td>XI IPA</td>
+        <td class="text-success fw-bold">Aktif</td>
+      </tr>
+      <tr>
+        <td class="text-center">2</td>
+        <td>Budi</td>
+        <td>XI IPS</td>
+        <td class="text-danger fw-bold">Nonaktif</td>
+      </tr>
+      <tr>
+        <td class="text-center">3</td>
+        <td>Citra</td>
+        <td>XI RPL</td>
+        <td class="text-success fw-bold">Aktif</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>

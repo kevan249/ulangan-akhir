@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Report Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<button id="topBtn">↑</button>
+
+<script>
+const topBtn = document.getElementById("topBtn");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    topBtn.style.display = "block";
+  } else {
+    topBtn.style.display = "none";
+  }
+});
+topBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+</script>
+
+<body>
+  <header>
+    <h1>Kevan's Student Report</h1>
+    <p>Pelajaran TIK</p>
+  </header>
+
+  <nav>
+    <a href="#about">Tentang</a>
+    <a href="#grades">Nilai</a>
+    <a href="#projects">Projects</a>
+  </nav>
+
+  <main>
+    <section class="profile-card">
+      <img src="Kevan.jpg" alt="Foto Kevan">
+      <h2>Kevan B. Yusgiantoro</h2>
+      <div class="biodata">
+        <p><strong>Kelas:</strong> XIA-6</p>
+        <p><strong>Sekolah:</strong> Kolese Kanisius</p>
+        <p><strong>Hobi:</strong> Sepedaan, Fotografi, Billiard</p>
+        <p><strong>Cita-cita:</strong> Biomedical Engineer</p>
+      </br>
+        <i>Everyone had to be drunk on something to keep pushing on</i>
+        <i>~Kenny Ackermann~</i>
+      </div>
+    </section>
+
+    <section id="about" class="content-box">
+      <h2>Tentang Saya</h2>
+      <p>
+        Saya adalah siswa kelas XI yang telah mempelajari banyak hal dalam pelajaran TIK, mulai dari HTML, CSS, hingga JavaScript. 
+        Saya yakin apa yang saya telah pelajari selama satu semester ini akan sangat bermanfaat untuk masa depan saya.
+      </p>
+    </section>
+
+    <section id="grades" class="content-box">
+      <h2>Nilai Semester Dua</h2>
+      <table>
+        <tr>
+          <th>No.</th>
+          <th>Materi</th>
+          <th>Nilai</th>
+        </tr>
+        <tr>
+          <td>1.</td>
+          <td>Container and Grid</td>
+          <td>75</td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td>Table</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td>Card</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>4.</td>
+          <td>Analisis JavaScript</td>
+          <td>100</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="projects" class="content-box">
+      <h2>Projects Semester Dua</h2>
+      <div class="project-container">
+        <div class="project-card">
+          <h3>Container & Grid</h3>
+          <p>Latihan membuat container dan grid dalam HTML</p>
+          <a href="Container & Grid.html">Buka Project</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Table</h3>
+          <p>Latihan membuat table dalam HTML</p>
+          <a href="Table.html">Buka Project</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Card Game</h3>
+          <p>Latihan membuat card dalam HTML </p>
+          <a href="Card Game.html">Buka Project</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Mini Project</h3>
+          <p>Website Sepatu Air Jordan XXXVIII</p>
+          <a href="https://notpienet.github.io/jordans/">Buka Project</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Analisis JavaScript</h3>
+          <p>Analisis Kode JavaScript pada Mini Project</p>
+          <a href="https://docs.google.com/document/d/1xRn_Y5ReomPh6fUJYt-dmvRdjhRZGN7_rj03Aee__Ys/edit?tab=t.0">Buka Project</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Kevan's Student Report | Kolese Kanisius</p>
+  </footer>
+
+  <script>
+    console.log("Website Loaded Successfully");
+  </script>
+</body>
+</html>
